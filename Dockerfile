@@ -1,4 +1,4 @@
-FROM jenkins:2.32.3-alpine
+FROM jenkins:2.32.3
 
 USER root
 RUN apt-get update \
