@@ -19,6 +19,7 @@ USER jenkins
 # installing specific list of plugins. see: https://github.com/jenkinsci/docker#preinstalling-plugins
 COPY plugins.txt /var/jenkins_home/plugins.txt
 RUN /usr/local/bin/plugins.sh /var/jenkins_home/plugins.txt
+#RUN  /usr/local/bin/install-plugins.sh /var/jenkins_home/plugins.txt
 
 # Adding default Jenkins Jobs
 #COPY jobs/1-github-seed-job.xml /usr/share/jenkins/ref/jobs/1-github-seed-job/config.xml
