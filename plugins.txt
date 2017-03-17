@@ -3,6 +3,7 @@ active-directory:2.2
 antisamy-markup-formatter:1.5
 async-http-client:1.7.24.1
 authentication-tokens:1.3
+bouncycastle-api:2.16.0
 branch-api:2.0.8
 build-timeout:1.18
 chucknorris:1.0
