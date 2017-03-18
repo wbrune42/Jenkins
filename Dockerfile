@@ -13,8 +13,8 @@ RUN echo "jenkins ALL=NOPASSWD: ALL" >> /etc/sudoers
 # see: https://wiki.jenkins-ci.org/display/JENKINS/CloudBees+Docker+Custom+Build+Environment+Plugin#CloudBeesDockerCustomBuildEnvironmentPlugin-DockerinDocker
 RUN curl -sSL -O https://get.docker.com/builds/Linux/x86_64/docker-latest.tgz && tar -xvzf docker-latest.tgz
 RUN mv docker/* /usr/bin/
-RUN groupadd docker 
-RUN sudo usermod -aG docker jenkins
+RUN groupadd -g 999 docker 
+RUN usermod -aG docker jenkins
 
 USER jenkins
 
