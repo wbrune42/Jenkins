@@ -15,6 +15,7 @@ RUN curl -sSL -O https://get.docker.com/builds/Linux/x86_64/docker-latest.tgz &&
 RUN mv docker/* /usr/bin/
 RUN groupadd -g 999 docker 
 RUN usermod -aG docker jenkins
+COPY hosts /etc/hosts
 
 USER jenkins
 
