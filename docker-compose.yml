@@ -1,0 +1,14 @@
+jenkins:   
+  image: registry.int.nsc.ag:5000/jenkins:latest
+  ports:     
+   - "8079:8080" 
+   - "50001:50000" 
+  #networks:     - prodnetwork   
+  volumes:     
+   - /var/run/docker.sock:/run/docker.sock     
+   - /usr/bin/docker:/usr/bin/docker     
+   - /opt/docker/jenkins:/var/jenkins_home
+  #depends_on:     - nexus     - gitlab     - sonar   environment:     - NEXUS_PORT=8081     
+  #- SONAR_PORT=9000     - SONAR_DB_PORT=5432 
+  environment:
+   - DOCKER_OPTS=--insecure-registry registry.int.nsc.ag:5000
