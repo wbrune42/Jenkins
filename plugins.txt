@@ -50,7 +50,7 @@ pipeline-model-declarative-agent:1.1.1
 pipeline-model-definition:1.1.7
 pipeline-model-extensions:1.1.7
 pipeline-multibranch-defaults:1.1
-pipeline-rest-api:2.11
+pipeline-rest-api:2.8
 pipeline-stage-step:2.2
 pipeline-stage-tags-metadata:1.1.7
 pipeline-stage-view:2.8
