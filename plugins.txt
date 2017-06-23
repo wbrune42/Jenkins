@@ -23,7 +23,7 @@ docker-workflow:1.10
 durable-task:1.13
 email-ext:2.57.1
 git:3.2.0
-git-client:2.4.1
+git-client:2.4.6
 git-server:1.7
 gradle:1.26
 groovy:1.30
