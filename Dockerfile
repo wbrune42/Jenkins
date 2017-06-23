@@ -34,7 +34,7 @@ COPY jobs/1-jenkins-seed-job.xml /usr/share/jenkins/ref/jobs/1-jenkins-seed-job/
 # Configure Jenkins
 ############################################
 # Jenkins settings
-#COPY config/config.xml /usr/share/jenkins/ref/config.xml
+COPY config/config.xml /usr/share/jenkins/ref/config.xml
 
 # Jenkins Settings, i.e. Maven, Groovy, ...
 COPY config/hudson.tasks.Maven.xml /usr/share/jenkins/ref/hudson.tasks.Maven.xml
@@ -49,3 +49,4 @@ COPY config/maven-global-settings-files.xml /usr/share/jenkins/ref/maven-global-
 # tell Jenkins that no banner prompt for pipeline plugins is needed
 # see: https://github.com/jenkinsci/docker#preinstalling-plugins
 RUN echo 2.0 > /usr/share/jenkins/ref/jenkins.install.UpgradeWizard.state
+
