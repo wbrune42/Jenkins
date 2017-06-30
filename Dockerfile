@@ -34,7 +34,7 @@ COPY jobs/1-jenkins-seed-job.xml /usr/share/jenkins/ref/jobs/1-jenkins-seed-job/
 # Configure Jenkins
 ############################################
 # Jenkins settings
-#COPY config/config.xml /usr/share/jenkins/ref/config.xml
+COPY config/config.xml /usr/share/jenkins/ref/config.xml
 
 # Jenkins Settings, i.e. Maven, Groovy, ...
 COPY config/hudson.tasks.Maven.xml /usr/share/jenkins/ref/hudson.tasks.Maven.xml
