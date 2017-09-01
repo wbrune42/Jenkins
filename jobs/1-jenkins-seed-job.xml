@@ -34,7 +34,7 @@
         <uri>unix:///var/run/docker.sock</uri>
       </server>
       <registry plugin="docker-commons@1.6">
-        <url>https://registry.int.nsc.ag:5000</url>
+        <url>http://registry.int.nsc.ag:5000</url>
       </registry>
       <repoName>jenkins</repoName>
       <noCache>false</noCache>
