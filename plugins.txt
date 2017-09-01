@@ -64,6 +64,7 @@ ssh-credentials:1.13
 structs:1.6
 timestamper:1.8.8
 token-macro:2.2
+workflow-aggregator:2.1
 workflow-api:2.12
 workflow-basic-steps:2.4
 workflow-cps:2.29
