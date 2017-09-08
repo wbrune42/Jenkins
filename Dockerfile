@@ -6,7 +6,7 @@ RUN echo "deb http://download.virtualbox.org/virtualbox/debian stretch contrib" 
 RUN curl -O https://www.virtualbox.org/download/oracle_vbox_2016.asc
 RUN apt-key add oracle_vbox_2016.asc
 RUN apt-get update \
-      && apt-get install -y sudo curl libltdl7 virtualbox-5.1  
+      && apt-get install -y sudo curl libltdl7 virtualbox-5.1 linux-headers-3.16.0-4-amd64
 #      && rm -rf /var/lib/apt/lists/*
 RUN echo "jenkins ALL=NOPASSWD: ALL" >> /etc/sudoers
 
