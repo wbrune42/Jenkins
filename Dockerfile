@@ -1,7 +1,5 @@
 FROM jenkins/jenkins:2.77
-
 USER root
-RUN apt-cache search headers 
 RUN echo "deb http://download.virtualbox.org/virtualbox/debian stretch contrib" > /etc/apt/sources.list.d/virtualbox.list
 RUN curl -O https://www.virtualbox.org/download/oracle_vbox_2016.asc
 RUN apt-key add oracle_vbox_2016.asc
