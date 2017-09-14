@@ -1,4 +1,4 @@
-FROM jenkins/jenkins:2.77
+FROM jenkins/jenkins:2.78
 USER root
 RUN echo "deb http://download.virtualbox.org/virtualbox/debian stretch contrib" > /etc/apt/sources.list.d/virtualbox.list
 RUN curl -O https://www.virtualbox.org/download/oracle_vbox_2016.asc
